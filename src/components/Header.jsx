@@ -43,11 +43,12 @@ export default Header
 
 const Nav = styled.nav`
 display:flex;
-justify-content:flex-start;
+justify-content:space-between;
 align-items:center;
 height:70px;
 background:#090b13 ;
 padding:0 30px;
+overflow-x:hidden;
 
 `
 
@@ -62,6 +63,9 @@ align-items:center;
 margin-left:20px;
 flex:1;
 
+@media(max-width:758px){
+    display:none;
+}
 a{
     display:flex;
     align-items:center;

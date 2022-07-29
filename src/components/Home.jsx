@@ -1,20 +1,15 @@
 import React from 'react'
 import styled from "styled-components"
-import imgSlider from './imgSlider'
-import Slider from "react-slick";
+import ImgSlider from './imgSlider'
+import Viewers from './Viewers'
 
-export default function SimpleSlider() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+
 function Home() {
   return (
     <Container>
-      <imgSlider/>
+      <ImgSlider></ImgSlider>
+      <Viewers></Viewers>
+
     </Container>
   )
 }
@@ -24,6 +19,7 @@ export default Home
 const Container = styled.main`
 height:calc(100vh - 100px);
 padding:calc(3.5vw + 5px);
+overflow:hidden;
 position:relative;
 &:before{
   background:url("/images/home-background.png") center center / cover
