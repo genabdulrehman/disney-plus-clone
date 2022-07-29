@@ -94,7 +94,7 @@ a{
     &:hover{
         span:after{
             transform:scaleX(1);
-            opacity:1;
+            opacity:1;g
         }
     }
     
