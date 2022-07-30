@@ -4,6 +4,7 @@ import Header from "../src/components/Header"
 import Home from "./components/Home"
 import Movies from "./components/Movies";
 import Details from "./components/Details"
+import Login from "./components/Login";
 
 import {
 	BrowserRouter as Router,
@@ -19,6 +20,7 @@ function App() {
 
 		<Routes>
 			<Route path="/details" element={<Details/>}/>
+			<Route path="/login" element={<Login/>}/>
 				
 			
 			<Route path="/" element={<Home/>}/>
